@@ -10,13 +10,47 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var text1: UILabel!
+    @IBOutlet weak var text2: UILabel!
+    @IBOutlet weak var buttonNext: UIButton!
+    var count = 0
+    var welcome : Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        text1.layer.cornerRadius = 15
+        text2.layer.cornerRadius = 15
+        buttonNext.layer.cornerRadius = 15
+        
+        fillLabel(countFunc: count)
     }
     
-
+    func fillLabel(countFunc : Int){
+        let texts = ["(Nome do app) é um app que busca ajudar na organização das suas tarefas e do seu tempo. Com ele você vai começar a economizar tempo na sua agenda, e terá seu trabalho na palma da sua mão. Esta pronto para começar?","Nas próximas telas vou ensinar dar algumas instruções para você de como utilizar o app, em breve você vai estar pronto para fazer tudo sozinho."]
+        
+        if count == 0 {
+            text1.text = texts[0]
+            text2.text = texts[1]
+        }
+        else if count == 1{
+            text1.text = texts[0]
+            text2.text = texts[1]
+        }
+    }
+    
+    @IBAction func buttonNext(_ sender: Any) {
+        count += 1
+        fillLabel(countFunc: count)
+        if count == 2{
+           welcome = false
+            UserDefaults.standard.set(Welcome, forKey: "UserHasSeenWelcome")
+                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                       let mainVC = storyboard.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+                       self.present(mainVC, animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
