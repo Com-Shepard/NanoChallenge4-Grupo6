@@ -371,7 +371,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="xOR-df-Nfh">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vRD-80-OaT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="vRD-80-OaT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t6M-TF-WsQ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
