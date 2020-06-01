@@ -44,9 +44,9 @@ class StartViewController: UIViewController {
         fillLabel(countFunc: count)
         if count == 2{
            welcome = false
-            UserDefaults.standard.set(Welcome, forKey: "UserHasSeenWelcome")
+            UserDefaults.standard.set(welcome, forKey: "UserHasSeenWelcome")
                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                       let mainVC = storyboard.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+                       let mainVC = storyboard.instantiateViewController(withIdentifier: "HomeVC") as! UITabBarController
                        self.present(mainVC, animated: true, completion: nil)
         }
     }

@@ -18,6 +18,8 @@
 		2DD7225C247EF0680033FE16 /* NanoChallenge4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7225B247EF0680033FE16 /* NanoChallenge4UITests.swift */; };
 		2DD7226A247F0A470033FE16 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD72269247F0A470033FE16 /* Start.storyboard */; };
 		2DD7226C247F0A660033FE16 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7226B247F0A650033FE16 /* StartViewController.swift */; };
+		2DD7226A247F0A470033FE16 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD72269247F0A470033FE16 /* Start.storyboard */; };
+		2DD7226C247F0A660033FE16 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7226B247F0A650033FE16 /* StartViewController.swift */; };
 		A398160E248047D400135086 /* TarefasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398160D248047D400135086 /* TarefasTableViewController.swift */; };
 		A39816102480481700135086 /* CategoriasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398160F2480481700135086 /* CategoriasTableViewController.swift */; };
 		A398161224804A2000135086 /* TarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398161124804A2000135086 /* TarefaViewController.swift */; };
@@ -68,7 +70,6 @@
 		A398161124804A2000135086 /* TarefaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaViewController.swift; sourceTree = "<group>"; };
 		A398161324804AD500135086 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A398161524804C9D00135086 /* TarefaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaTableViewCell.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
