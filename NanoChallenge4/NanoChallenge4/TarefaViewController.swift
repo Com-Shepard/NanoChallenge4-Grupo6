@@ -15,14 +15,33 @@ class TarefaViewController: UIViewController {
     @IBOutlet weak var lbDeadline: UILabel!
     @IBOutlet weak var ivCover: UIImageView!
     
-    
+    var task: Task!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        lbName.text = task.name
+        lbCategory.text = task.category?.name
+        if let deadline = task.deadline {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd/MM/yyyy' 'HH:mm"
+            formatter.locale = Locale(identifier: "pt-BR")
+            lbDeadline.text = "Prazo: " + formatter.string(from: deadline)
+        }
+        if let image = task.cover as? UIImage {
+            ivCover.image = image
+        } else {
+            ivCover.image = UIImage(named: "noCoverFull")
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddEditViewController
+        vc.task = task
+    }
 
     /*
     // MARK: - Navigation
