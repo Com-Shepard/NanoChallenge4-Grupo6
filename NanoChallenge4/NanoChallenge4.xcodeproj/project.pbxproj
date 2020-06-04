@@ -18,14 +18,13 @@
 		2DD7225C247EF0680033FE16 /* NanoChallenge4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7225B247EF0680033FE16 /* NanoChallenge4UITests.swift */; };
 		2DD7226A247F0A470033FE16 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD72269247F0A470033FE16 /* Start.storyboard */; };
 		2DD7226C247F0A660033FE16 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7226B247F0A650033FE16 /* StartViewController.swift */; };
-		2DD7226A247F0A470033FE16 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD72269247F0A470033FE16 /* Start.storyboard */; };
-		2DD7226C247F0A660033FE16 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7226B247F0A650033FE16 /* StartViewController.swift */; };
 		A398160E248047D400135086 /* TarefasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398160D248047D400135086 /* TarefasTableViewController.swift */; };
 		A39816102480481700135086 /* CategoriasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398160F2480481700135086 /* CategoriasTableViewController.swift */; };
 		A398161224804A2000135086 /* TarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398161124804A2000135086 /* TarefaViewController.swift */; };
 		A398161424804AD500135086 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398161324804AD500135086 /* AddEditViewController.swift */; };
 		A398161624804C9D00135086 /* TarefaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398161524804C9D00135086 /* TarefaTableViewCell.swift */; };
-
+		A3E8C2CB2487283200DE88D5 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E8C2CA2487283200DE88D5 /* ViewController+CoreData.swift */; };
+		A3E8C2CD248740EC00DE88D5 /* CategoriasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E8C2CC248740EC00DE88D5 /* CategoriasManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,15 +60,15 @@
 		2DD72257247EF0680033FE16 /* NanoChallenge4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoChallenge4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD7225B247EF0680033FE16 /* NanoChallenge4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge4UITests.swift; sourceTree = "<group>"; };
 		2DD7225D247EF0680033FE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
 		2DD72269247F0A470033FE16 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		2DD7226B247F0A650033FE16 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-
 		A398160D248047D400135086 /* TarefasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefasTableViewController.swift; sourceTree = "<group>"; };
 		A398160F2480481700135086 /* CategoriasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasTableViewController.swift; sourceTree = "<group>"; };
 		A398161124804A2000135086 /* TarefaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaViewController.swift; sourceTree = "<group>"; };
 		A398161324804AD500135086 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A398161524804C9D00135086 /* TarefaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaTableViewCell.swift; sourceTree = "<group>"; };
+		A3E8C2CA2487283200DE88D5 /* ViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
+		A3E8C2CC248740EC00DE88D5 /* CategoriasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +126,10 @@
 				A398161524804C9D00135086 /* TarefaTableViewCell.swift */,
 				A398160D248047D400135086 /* TarefasTableViewController.swift */,
 				A398160F2480481700135086 /* CategoriasTableViewController.swift */,
+				A3E8C2CC248740EC00DE88D5 /* CategoriasManager.swift */,
 				A398161124804A2000135086 /* TarefaViewController.swift */,
 				A398161324804AD500135086 /* AddEditViewController.swift */,
+				A3E8C2CA2487283200DE88D5 /* ViewController+CoreData.swift */,
 				2DD72242247EF0680033FE16 /* Assets.xcassets */,
 				2DD72244247EF0680033FE16 /* LaunchScreen.storyboard */,
 				2DD72247247EF0680033FE16 /* Info.plist */,
@@ -289,16 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				2DD7226C247F0A660033FE16 /* StartViewController.swift in Sources */,
-
 				A398160E248047D400135086 /* TarefasTableViewController.swift in Sources */,
 				A39816102480481700135086 /* CategoriasTableViewController.swift in Sources */,
-
 				2DD7223B247EF0660033FE16 /* ViewController.swift in Sources */,
 				A398161224804A2000135086 /* TarefaViewController.swift in Sources */,
 				A398161424804AD500135086 /* AddEditViewController.swift in Sources */,
+				A3E8C2CB2487283200DE88D5 /* ViewController+CoreData.swift in Sources */,
 				2DD72237247EF0660033FE16 /* AppDelegate.swift in Sources */,
+				A3E8C2CD248740EC00DE88D5 /* CategoriasManager.swift in Sources */,
 				2DD72241247EF0660033FE16 /* NanoChallenge4.xcdatamodeld in Sources */,
 				2DD72239247EF0660033FE16 /* SceneDelegate.swift in Sources */,
 				A398161624804C9D00135086 /* TarefaTableViewCell.swift in Sources */,

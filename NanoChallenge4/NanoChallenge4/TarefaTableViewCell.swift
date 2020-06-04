@@ -25,5 +25,21 @@ class TarefaTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    func prepare(with task: Task) {
+        lbName.text = task.name ?? ""
+        lbCategory.text = task.category?.name ?? ""
+        if let deadline = task.deadline {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd/MM/yyyy' 'HH:mm"
+            formatter.locale = Locale(identifier: "pt-BR")
+            lbDeadline.text = "Prazo: " + formatter.string(from: deadline)
+        }
+        if let image = task.cover as? UIImage {
+            ivCover.image = image
+        } else {
+            ivCover.image = UIImage(named: "noCover")
+        }
+    }
+    
 }
