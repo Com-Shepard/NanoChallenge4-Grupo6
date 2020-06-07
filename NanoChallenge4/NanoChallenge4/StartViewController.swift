@@ -31,7 +31,7 @@ class StartViewController: UIViewController {
     
     func fillLabel(countFunc : Int){
         let texts = ["I-Signment é um app que busca ajudar na organização das suas tarefas e do seu tempo. Com ele você vai começar a economizar tempo na sua agenda, e terá seu trabalho na palma da sua mão. Pronto para começar?" , "Nas próximas telas vou dar algumas instruções para você de como utilizar o app, em breve você vai estar pronto para fazer tudo sozinho." , "Primeiro o básico, para adicionar novas tarefas você só precisa pressionar o simbolo de adição no canto superior direito da tela" , "Ele levará você a tela de adição de tarefas. La você poderá especificar como deseja anotar sua tarefa." , "Aqui você poderá criar sua tarefa. Defina um nome, escolha uma categoria, e anote a data." , "Tudo isso vai servir para que você não se esqueça do que tem que fazer e até quando você tem tempo para cumprir esta tarefa" , "Você também pode adicionar uma imagem a tarefa caso queira, apenas clique no texto e escolha a imagem da sua galeria" , "Para finalizar clique em adicionar, sua tarefa estará na tela inicial do app sempre que você precisar olhar." , "Ah, e para adicionar uma nova categoria, basta adicionar uma nova na aba categorias", "É bem simples e se parece muito com o que você ja aprendeu a fazer com as tarefas. Agora você ja sabe tudo que precisa para começar, vamos la."]
-        let images = [UIImage(named: "Logo"),UIImage(named: "New One"),UIImage(named: "New Details"),UIImage(named: "New Add"),UIImage(named: "New categ")]
+        let images = [UIImage(named: "logo"),UIImage(named: "New One"),UIImage(named: "New Details"),UIImage(named: "New Add"),UIImage(named: "New categ")]
         
         if count == 0 {
             text1.text = texts[0]
