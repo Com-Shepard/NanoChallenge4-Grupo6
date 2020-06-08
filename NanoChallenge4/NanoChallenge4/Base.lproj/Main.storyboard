@@ -339,7 +339,7 @@
         <scene sceneID="W9d-Rg-c70">
             <objects>
                 <navigationController id="nPV-fa-1Ez" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Categorias" id="63N-4k-BVn"/>
+                    <tabBarItem key="tabBarItem" title="Categorias" image="list" id="63N-4k-BVn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="AyQ-L8-VF8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -357,7 +357,7 @@
         <scene sceneID="cnc-kk-WuJ">
             <objects>
                 <navigationController id="XGU-zC-MFK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tarefas" id="VXv-Au-JhC"/>
+                    <tabBarItem key="tabBarItem" title="Tarefas" image="task" id="VXv-Au-JhC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="hFr-qW-3Xr">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -399,6 +399,8 @@
         <segue reference="qSu-un-wHI"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="list" width="40" height="40"/>
+        <image name="task" width="37" height="37"/>
         <namedColor name="main">
             <color red="0.60000002384185791" green="0.60000002384185791" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
