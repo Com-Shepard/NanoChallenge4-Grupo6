@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        UINavigationBar.appearance().tintColor = .black
+        
         return true
     }
 
@@ -56,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                  * The store could not be migrated to the current model version.
                  Check the error message to determine what the actual problem was.
                  */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                //fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
         return container
